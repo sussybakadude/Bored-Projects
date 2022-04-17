@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+</head>
+
+<body>
+  <textarea placeholder="Put Code Here" id="in"></textarea><br><br>
+  <button onclick="submit()">Submit</button><br><br>
+  <textarea placeholder="Output" id="out"></textarea>
+  <script>
+    function submit() {
+a = document.getElementById("in")
+c = document.getElementById("out")
+b = a.value.split("\n")
+  text = ""
+for (let i = 0; i < b.length; i++) {
+  text += b[i]
+}
+c.value = text
+}
+  </script>
+</body>
+
+</html>
